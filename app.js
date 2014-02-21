@@ -7,7 +7,7 @@ var app = express();
 
 mongoose.connect('mongodb://localhost/andychups');
 mongoose.connection.on('error', function (err) {
-    console.error(err);
+    console.error('MongoDB connection error:', err);
 });
 
 

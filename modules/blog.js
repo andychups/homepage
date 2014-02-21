@@ -1,4 +1,5 @@
 var blog = {};
+var Vow = require('vow');
 var Thread = require('../models/thread.js');
 var Post = require('../models/post.js');
 
@@ -12,14 +13,18 @@ var Post = require('../models/post.js');
  * @param {Function} params.fail Негативный коллбек
  */
 blog.post = function (params) {
-    new Thread({title: params.data.title, author: params.data.author}).save(function (err) {
+    var promise = Vow.promise();
+
+    new Thread({title: params.title, author: params.author}).save(function (err) {
         if (err) {
-            params.fail(err);
+            promise.reject(err);
             return;
         }
 
-        params.success();
+        promise.fulfill();
     });
+
+    return promise;
 };
 
 /**
@@ -29,14 +34,18 @@ blog.post = function (params) {
  * @param {Function} params.fail Негативный коллбек
  */
 blog.list = function (params) {
+    var promise = Vow.promise();
+
     Thread.find(function (err, threads) {
         if (err) {
-            params.fail(err);
+            promise.reject(err);
             return;
         }
 
-        params.success(threads);
+        promise.fulfill(threads);
     });
+
+    return promise;
 };
 
 
@@ -49,21 +58,25 @@ blog.list = function (params) {
  * @param {Function} params.fail Негативный коллбек
  */
 blog.show = function (params) {
+    var promise = Vow.promise();
+
     Thread.findOne({title: title}, function (err, thread) {
         if (err) {
-            params.fail(err);
+            promise.reject(err);
             return;
         }
 
         Post.find({thread: thread._id}, function (err, posts) {
             if (err) {
-                params.fail(err);
+                promise.reject(err);
                 return;
             }
 
-            params.success({thread: thread, posts: posts});
+            promise.fulfill({thread: thread, posts: posts});
         });
     });
+
+    return promise;
 };
 
 module.exports = blog;
