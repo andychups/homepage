@@ -1,0 +1,22 @@
+extends ../../blocks/layout/layout
+
+block layout-content
+    - rand = Math.round(Math.random() * 100);
+
+    form(action="/api/blog/thread?retpath=/post", method="post")
+        div
+            label(for="author") Автор
+            br
+            input(type="text", id="author", name="author", value="автор "+rand)
+        div
+        div
+            label(for="title") Заголовок
+            br
+            input(type="text", id="title", name="title", value="заголовок "+rand)
+
+        div
+            textarea(name="message", cols="50", rows="10")
+                | сообщение
+
+        div
+            input(type="submit")
