@@ -1,0 +1,48 @@
+module "main"
+
+include "works.yate"
+
+match / css {
+    <link rel="stylesheet" href="/desktop.bundles/works/_works.css" media="screen" />
+}
+
+match / content {
+    <h1>Работы</h1>
+
+    <ul class="b-works">
+        <li class="b-works__item">
+            <h2><a href="http://pointblank.ru/landing1" target="_blank">Pointblank</a> &nbsp;&#8594; Innova</h2>
+            <p>Landing</p>
+        </li>
+
+        <li class="b-works__item">
+            <h2>Nokia Art Object &nbsp;&#8594; Actis Wunderman</h2>
+            <div class="b-embed-video"><iframe src="http://www.youtube.com/embed/7mB-8jfCVw0" frameborder="0"></iframe></div>
+            <p>Opera, Kinect</p>
+        </li>
+
+        <li class="b-works__item">
+            <h2><a href="http://store.nokia.ru" target="_blank">Store Nokia</a> &nbsp;&#8594; Actis Wunderman</h2>
+            <a href="http://store.nokia.ru" target="_blank"><img src="/media/works/nokia.png" /></a>
+            <p>IE7+, Opera, FF 3.0+, Chrome, Safari</p>
+        </li>
+
+        <li class="b-works__item">
+            <h2><a href="http://www.danone.ru" target="_blank">Danone</a> &nbsp;&#8594; Actis Wunderman</h2>
+            <a href="http://www.danone.ru" target="_blank"><img src="/media/works/danone.png" /></a>
+            <p>IE7+, Opera 9.0+, FF 2.0+, Chrome, Safari</p>
+        </li>
+
+        <li class="b-works__item">
+            <h2><a href="http://3g.beeline.ru" target="_blank">Билайн 3G</a> &nbsp;&#8594; Actis Wunderman</h2>
+            <a href="http://3g.beeline.ru" target="_blank"><img src="/media/works/beeline3g/beeline3g.png" /></a>
+            <p>IE7+, Opera 9.0+, FF 3.0+, Chrome, Safari (Win/Mac)</p>
+        </li>
+
+        <li class="b-works__item">
+            <h2><a href="http://www.unicreditleasing.ru" target="_blank">ЮниКредит Лизинг</a> &nbsp;&#8594; Actis Wunderman</h2>
+            <a href="http://www.unicreditleasing.ru" target="_blank"><img src="/media/works/unleasing.png" /></a>
+            <p>IE6+, Opera 9.0+, FF 2.0+, Chrome</p>
+        </li>
+    </ul>
+}

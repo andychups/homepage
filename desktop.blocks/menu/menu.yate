@@ -1,0 +1,13 @@
+module "menu"
+
+match / menu {
+    <ul class="b-menu b-menu_horizontal" id="js-menu">
+        <li class="b-menu__item"><a title="Главная" href="/" class="b-menu-item__link">Поехали</a></li>
+        <li class="b-menu__item"><i class="b-menu-item__del"></i></li>
+        <li class="b-menu__item"><a title="Резюме" href="/resume" class="b-menu-item__link">Резюме</a></li>
+        <li class="b-menu__item"><i class="b-menu-item__del"></i></li>
+        <li class="b-menu__item"><a title="Работы" href="/works" class="b-menu-item__link">Работы</a></li>
+        <li class="b-menu__item"><i class="b-menu-item__del"></i></li>
+        <li class="b-menu__item"><a title="Заметки" href="/blog" class="b-menu-item__link">Заметки</a></li>
+    </ul>
+}

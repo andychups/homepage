@@ -1,0 +1,41 @@
+module "main"
+
+include "index.yate"
+
+match / css {
+    <link rel="stylesheet" href="/desktop.bundles/index/_index.css" media="screen" />
+}
+
+match / content {
+    <h1>Поехали</h1>
+
+    "Меня зовут Андрей. Я Front-end разработчик. Проживаю в Москве."
+    <p>Специализируюсь на UI и клиентской части веб-разработки: кроссбраузерная совместимость, дружелюбная к пользователям и pixel-perfect верстка с использованием xHTML, HTML5, CSS, CSS3, JS, AJAX, JQuery и интеграцией всего этого дела в CMS с помощью XML, XSLT.</p>
+
+    <p>Готов поучаствовать в интересных проектах, помочь сверстать сайт (или сделать под ключ), порекомендовать вам специалистов.</p>
+
+    <h2>Навыки</h2>
+    <ul>
+        <li>xHTML, HTML 4-5, CSS 2-3, БЭМ</li>
+        <li>JavaScript, jQuery, AJAX</li>
+        <li>XML, XPath, XSLT</li>
+        <li>SVN, CVS</li>
+        <li>Немного знаком: PHP, SQL</li>
+    </ul>
+
+    <p><a href="/resume">Взглянуть на резюме &raquo;</a></p>
+
+    <h2>Я в сети</h2>
+    <ul class="b-list">
+        <li class="b-list__item"><a href="http://www.facebook.com/andychups" target="_blank" title="Facebook" class="b-icon b-icon_type_social b-icon_image_facebook"></a></li>
+        <li class="b-list__item"><a href="http://www.linkedin.com/pub/andrew-chupeykin/22/4a5/909" target="_blank" title="LinkedIn" class="b-icon b-icon_type_social b-icon_image_linkedin"></a></li>
+        <li class="b-list__item"><a href="http://chupeykin.moikrug.ru" target="_blank" title="МойКруг" class="b-icon b-icon_type_social b-icon_image_moikrug"></a></li>
+        <li class="b-list__item"><a href="http://www.flickr.com/photos/andychups" target="_blank" title="Flickr" class="b-icon b-icon_type_social b-icon_image_flickr"></a></li>
+        <li class="b-list__item"><a href="skype:andrew_chups" target="_blank" title="Skype" class="b-icon b-icon_type_social b-icon_image_skype"></a></li>
+        <li class="b-list__item"><a href="mailto:andychups@ya.ru" title="andychups@ya.ru" class="b-icon b-icon_type_social b-icon_image_mail"></a></li>
+    </ul>
+
+    <p>
+        <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.andychups.ru&amp;send=false&amp;layout=button_count&amp;width=150&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=tahoma&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px;" allowTransparency="true"></iframe>
+    </p>
+}

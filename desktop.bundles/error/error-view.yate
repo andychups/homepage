@@ -1,0 +1,17 @@
+module "main"
+
+include "error.yate"
+
+match / css {
+    <link rel="stylesheet" href="/desktop.bundles/error/_error.css" media="screen" />
+}
+
+match / content {
+    <h1>Произошла ошибка</h1>
+    <h2>
+        .error.code
+    </h2>
+    <pre>
+        .error.message
+    </pre>
+}

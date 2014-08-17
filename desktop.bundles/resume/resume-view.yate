@@ -1,0 +1,129 @@
+module "main"
+
+include "resume.yate"
+
+match / css {
+    <link rel="stylesheet" href="/desktop.bundles/resume/_resume.css" media="screen" />
+}
+
+match / content {
+    <h1>Резюме</h1>
+
+    <p>Дата рождения: 19 марта 1988</p>
+    <p>Проживание: Россия, Москва</p>
+    <p>E-mail: <a href="mailto:chupeykin@gmail.ru">chupeykin@gmail.ru</a></p>
+
+    <h2>Профессиональные цели</h2>
+    <ul>
+        <li>Совершенство в мелочах</li>
+        <li>Делать &laquo;тру&raquo;</li>
+    </ul>
+
+    <h2>Специализация и профессиональные навыки</h2>
+    <ul>
+        <li>xHTML, HTML5, CSS, CSS3, БЭМ</li>
+        <li>JavaScript, AJAX, jQuery</li>
+        <li>XML, XPath, XSLT</li>
+        <li>SVN, CVS</li>
+        <li>Немного знаком: PHP, SQL</li>
+    </ul>
+
+    <h3>Опыт работы</h3>
+    <ol class="b-resume">
+
+        <li class="b-resume__item">
+            <h4><a href="http://inn.ru/" target="_blank">Innova Systems</a>, <span class="b-resume-item__position">Front-end developer</span></h4>
+            <div class="b-resume-item__amount">101 &ndash; 1000 человек</div>
+            <div class="b-resume-item__term">Апрель 2012 &ndash; продолжаю работать</div>
+        </li>
+
+        <li class="b-resume__item">
+            <h4><a href="http://www.actis.ru" target="_blank">Actis Wunderman</a>, <span class="b-resume-item__position">зам. начальника отдела верстки</span></h4>
+            <div class="b-resume-item__amount">101 &ndash; 1000 человек</div>
+            <div class="b-resume-item__term">Август 2011 &ndash; Апрель 2012</div>
+        </li>
+
+        <li class="b-resume__item">
+            <h4><a href="http://www.actis.ru" target="_blank">Actis Wunderman</a>, <span class="b-resume-item__position">HTML/XSLT-верстальщик</span></h4>
+            <div class="b-resume-item__amount">101 &ndash; 1000 человек</div>
+            <div class="b-resume-item__term">Январь 2010 &ndash; Август 2011</div>
+            <div class="b-resume-item__desc">
+                "Верстка сайтов, писем, промотабов (Facebook, Вконтакте), разработка скриптов, интеграция верстки."
+                <br />
+                "HTML, CSS, JS, XSLT."
+
+                <p>
+                    <h5>Разработка (XSLT) / Верстка (HTML/JS)</h5>
+                    <ol>
+                        <li><a href="http://store.nokia.ru" target="_blank">store.nokia.ru</a> &ndash; HTML, CSS3, JS, AJAX, Bitrix</li>
+                        <li><a href="http://danone.ru" target="_blank">danone.ru</a></li>
+                        <li><a href="http://3g.beeline.ru" target="_blank">3g.beeline.ru</a></li>
+                        <li><a href="http://unicreditleasing.ru" target="_blank">unicreditleasing.ru</a></li>
+                        <li><a href="http://www.discoverynetworks.ru" target="_blank">discoverynetworks.ru</a> / XSLT, JS, последующая оптимизация сайта front-end &amp; back-end</li>
+                        <li><a href="http://www.myclinic.ru" target="_blank">myclinc.ru</a> / XSLT, JS</li>
+                    </ol>
+                </p>
+
+                <p>
+                    <h5>Поддержка проектов</h5>
+                    <ol>
+                        <li><a href="http://www.unicreditbank.ru" target="_blank">unicreditbank.ru</a></li>
+                        <li><a href="http://www.tyreplus.ru" target="_blank">tyreplus.ru</a></li>
+                        <li><a href="http://www.bmw.ru" target="_blank">bmw.ru</a></li>
+                        <li><a href="http://www.megamall.ru" target="_blank">megamall.ru</a></li>
+                    </ol>
+                </p>
+            </div>
+        </li>
+
+        <li class="b-resume__item">
+            <h4><a href="http://www.expert.ru" target="_blank">Группа Эксперт</a>, <span class="b-resume-item__position">HTML-верстальщик</span></h4>
+            <div class="b-resume-item__amount">101 &ndash; 1000 человек</div>
+            <div class="b-resume-item__term">Август 2007 &ndash; Декабрь 2009</div>
+            <div class="b-resume-item__desc">
+                "Верстка макетов, разработка cкриптов."
+                <br />
+                "xHTML, CSS, JS, jQuery."
+
+                <p>Разработка интерфейса для интерактивного терминала (HTML, JS).</p>
+                <p>
+                <h5>Опыт руководителя проектов:</h5>
+                <ol>
+                    <li>разработка "ТЗ";</li>
+                    <li>контроль разработки и внедрения сервисов.</li>
+                </ol>
+                </p>
+                <!--
+                <p>
+                    <h5>Верстка</h5>
+                    <ol>
+                        <li><a href="http://annual-report.ru" target="_blank">annual-report.ru</a></li>
+                        <li><a href="http://rusdb.ru" target="_blank">rusdb.ru</a></li>
+                        <li><a href="http://raexpert.ru" target="_blank">raexpert.ru</a></li>
+                    </ol>
+                </p>
+                -->
+            </div>
+        </li>
+
+        <li class="b-resume__item">
+            <h4><a href="http://www.rodnik.ru" target="_blank">ЗАО "НПП "РОДНИК"</a>, <span class="b-resume-item__position">веб-мастер</span></h4>
+            <div class="b-resume-item__amount">11 &ndash; 100 человек</div>
+            <div class="b-resume-item__term">Январь 2006 &ndash; Август 2007</div>
+            <div class="b-resume-item__desc">
+                "Поддержка сайтов компании."
+                <p>xHTML, CSS, JS, PHP+MySQL.</p>
+                <p>Проведение мероприятий по продвижению сайта в интернете: seo, контекстная реклама, блоги, соц. сети.</p>
+            </div>
+        </li>
+    </ol>
+
+    <h2>Образование</h2>
+    <ol>
+        <li>ПИЮ (Профессиональный институт юриспруденции)<br />Высшее, специальное, Москва, 2008 &ndash; 2010<br />Ф-т: Юриспруденция</li>
+        <li>МФПА (Московская финансово-промышленная академия; ММИЭИФП)<br />Неоконченное высшее, Москва, 2006 &ndash; 2008<br />Ф-т: Программирования</li>
+    </ol>
+
+    <h2>Награды, сертификаты, портфолио, проекты</h2>
+    "Курс &laquo;Основы программирования и баз данных&raquo;, &laquo;Специалист&raquo; при МГТУ им.Н.Э.Баумана;"
+}

@@ -1,0 +1,2 @@
+include "../../desktop.blocks/layout/layout.yate"
+include "../../desktop.blocks/menu/menu.yate"

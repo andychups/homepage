@@ -1,0 +1,12 @@
+module "main"
+
+include "blog.yate"
+
+match / css {
+    <link rel="stylesheet" href="/desktop.bundles/blog/_blog.css" media="screen" />
+}
+
+match / content {
+    <h1>Блог</h1>
+    <h2>In progress...</h2>
+}
